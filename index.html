@@ -66,11 +66,10 @@
 
         /* Project card styles */
         .project-card {
-            background-size: cover;
-            background-position: center;
             border-radius: 1rem;
             overflow: hidden;
             position: relative;
+            display: block;
             transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
@@ -78,6 +77,14 @@
         .project-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .project-card img {
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.05);
         }
 
         /* Card overlay styles */
@@ -168,7 +175,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
 
                 <!-- App 1: Japanese Phrasebook -->
-                <a href="https://martinglackin-tech.github.io/Japan/" target="_blank" class="project-card h-96 reveal" style="background-image: url('https://storage.googleapis.com/gemini-prod-us-west1-433500273934-dev-public/uploaded/japanphrasebook.jpg');">
+                <a href="https://martinglackin-tech.github.io/Japan/" target="_blank" class="project-card h-96 reveal">
+                    <img src="https://storage.googleapis.com/gemini-prod-us-west1-433500273934-dev-public/uploaded/japanphrasebook.jpg" alt="Japanese Phrasebook" class="absolute inset-0 w-full h-full object-cover">
                     <div class="card-overlay">
                         <div class="card-content">
                             <h3 class="text-2xl font-bold text-white">Japanese Phrasebook</h3>
@@ -179,7 +187,8 @@
                 </a>
 
                 <!-- App 2: Assessing Capacity -->
-                <a href="https://martinglackin-tech.github.io/Assessing-Capacity/" target="_blank" class="project-card h-96 reveal" style="background-image: url('https://storage.googleapis.com/gemini-prod-us-west1-433500273934-dev-public/uploaded/assessing-capacity.avif');">
+                <a href="https://martinglackin-tech.github.io/Assessing-Capacity/" target="_blank" class="project-card h-96 reveal">
+                    <img src="https://storage.googleapis.com/gemini-prod-us-west1-433500273934-dev-public/uploaded/assessing-capacity.avif" alt="Assessing Capacity" class="absolute inset-0 w-full h-full object-cover">
                     <div class="card-overlay">
                         <div class="card-content">
                             <h3 class="text-2xl font-bold text-white">Assessing Capacity</h3>
@@ -189,7 +198,8 @@
                 </a>
 
                 <!-- App 3: Japan Shop -->
-                <a href="https://martinglackin-tech.github.io/JapanShop/" target="_blank" class="project-card h-96 reveal" style="background-image: url('https://storage.googleapis.com/gemini-prod-us-west1-433500273934-dev-public/uploaded/shopping.jpg');">
+                <a href="https://martinglackin-tech.github.io/JapanShop/" target="_blank" class="project-card h-96 reveal">
+                    <img src="https://storage.googleapis.com/gemini-prod-us-west1-433500273934-dev-public/uploaded/shopping.jpg" alt="Japan Shop" class="absolute inset-0 w-full h-full object-cover">
                     <div class="card-overlay">
                         <div class="card-content">
                             <h3 class="text-2xl font-bold text-white">Japan Shop</h3>
@@ -199,7 +209,8 @@
                 </a>
 
                 <!-- App 4: Movie Night -->
-                <a href="https://martinglackin-tech.github.io/Movie-Night/" target="_blank" class="project-card h-96 reveal" style="background-image: url('https://storage.googleapis.com/gemini-prod-us-west1-433500273934-dev-public/uploaded/landing.jpg');">
+                <a href="https://martinglackin-tech.github.io/Movie-Night/" target="_blank" class="project-card h-96 reveal">
+                    <img src="https://storage.googleapis.com/gemini-prod-us-west1-433500273934-dev-public/uploaded/landing.jpg" alt="Movie Night" class="absolute inset-0 w-full h-full object-cover">
                     <div class="card-overlay">
                         <div class="card-content">
                             <h3 class="text-2xl font-bold text-white">Movie Night</h3>
@@ -209,7 +220,8 @@
                 </a>
 
                 <!-- App 5: Japan Countdown -->
-                <a href="https://martinglackin-tech.github.io/Japan-Countdown/" target="_blank" class="project-card h-96 reveal" style="background-image: url('https://storage.googleapis.com/gemini-prod-us-west1-433500273934-dev-public/uploaded/shopping.jpg');">
+                <a href="https://martinglackin-tech.github.io/Japan-Countdown/" target="_blank" class="project-card h-96 reveal">
+                    <img src="https://storage.googleapis.com/gemini-prod-us-west1-433500273934-dev-public/uploaded/shopping.jpg" alt="Japan Countdown" class="absolute inset-0 w-full h-full object-cover">
                     <div class="card-overlay">
                         <div class="card-content">
                             <h3 class="text-2xl font-bold text-white">Japan Countdown</h3>
