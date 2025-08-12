@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Glackin's Project Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom class for the card image overlay */
+        .card-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.2) 100%);
+            border-radius: 0.75rem; /* 12px */
+            opacity: 0.8;
+            transition: opacity 0.3s ease-in-out;
+        }
+        /* On hover, make the overlay slightly more transparent to brighten the image */
+        .group:hover .card-overlay::before {
+            opacity: 0.6;
+        }
+        /* Custom class for the card title to ensure it's readable */
+        .card-title {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 py-8 md:py-16">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">
+                Martin Glackin's Portfolio
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mt-2">
+                A collection of my recent web projects.
+            </p>
+        </header>
+
+        <!-- Projects Grid -->
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project Card 1: Assessing Capacity -->
+            <a href="https://martinglackin-tech.github.io/Assessing-Capacity/" target="_blank" rel="noopener noreferrer" class="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <div class="relative h-80 w-full bg-cover bg-center card-overlay" style="background-image: url('https://raw.githubusercontent.com/martinglackin-tech/Assessing-Capacity/main/assets/images/screenshot.PNG');">
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <h2 class="text-2xl font-bold card-title text-white">Assessing Capacity</h2>
+                        <p class="text-gray-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">A tool for medical capacity assessment.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project Card 2: Movie Night -->
+            <a href="https://martinglackin-tech.github.io/Movie-Night/" target="_blank" rel="noopener noreferrer" class="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <div class="relative h-80 w-full bg-cover bg-center card-overlay" style="background-image: url('https://raw.githubusercontent.com/martinglackin-tech/Movie-Night/main/assets/images/movie-night-screenshot.png');">
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <h2 class="text-2xl font-bold card-title text-white">Movie Night</h2>
+                        <p class="text-gray-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Find the perfect movie to watch.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project Card 3: Japan Travel -->
+            <a href="https://martinglackin-tech.github.io/Japan/" target="_blank" rel="noopener noreferrer" class="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <div class="relative h-80 w-full bg-cover bg-center card-overlay" style="background-image: url('https://raw.githubusercontent.com/martinglackin-tech/Japan/main/assets/images/fushimi-inari-main.jpg');">
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <h2 class="text-2xl font-bold card-title text-white">Japan Travel Site</h2>
+                        <p class="text-gray-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">An informational site about visiting Japan.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project Card 4: Japan Countdown -->
+            <a href="https://martinglackin-tech.github.io/Japan-Countdown/" target="_blank" rel="noopener noreferrer" class="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <div class="relative h-80 w-full bg-cover bg-center card-overlay" style="background-image: url('https://raw.githubusercontent.com/martinglackin-tech/Japan-Countdown/main/assets/images/screenshot.PNG');">
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <h2 class="text-2xl font-bold card-title text-white">Japan Countdown</h2>
+                        <p class="text-gray-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">A countdown timer for a trip to Japan.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project Card 5: Japan Shop -->
+            <a href="https://martinglackin-tech.github.io/JapanShop/" target="_blank" rel="noopener noreferrer" class="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <div class="relative h-80 w-full bg-cover bg-center card-overlay" style="background-image: url('https://raw.githubusercontent.com/martinglackin-tech/JapanShop/main/assets/images/screenshot.png');">
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <h2 class="text-2xl font-bold card-title text-white">Japan Shop</h2>
+                        <p class="text-gray-200 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">A concept e-commerce site.</p>
+                    </div>
+                </div>
+            </a>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-16">
+            <p class="text-gray-500">&copy; 2025 Martin Glackin. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
